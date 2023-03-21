@@ -88,7 +88,7 @@ function startTime() {
   s = checkTime(s);
   document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
   setTimeout(startTime, 1000);
-  if (h > 23 && h < 12) {
+  if (h > 0 && h < 12) {
     greetings = "Good morning, Adi <3";
     morningMessage = "When you open this website, panigurado tulog pa ako or nasa school na. I hope yung morning mo ngayon ay good na, I know you are very stressed with your school works but don't forget to take care of yourself habang wala pa akong sa tabi mo na dapat ako ang gagawa. I love youuu aking tinatangi."
   } else if (h >11 && h < 5) {
@@ -99,7 +99,7 @@ function startTime() {
   if (h > 6 && h <24) {
     document.getElementById('greet').innerHTML = greetings;
     document.getElementById('content').innerHTML = morningMessage;
-  } else if (h > 23 && h <12) {
+  } else if (h > 0 && h <12) {
     document.getElementById('greet').innerHTML = greetings;
     document.getElementById('content').innerHTML = morningMessage;
   }
